@@ -8,10 +8,16 @@ function setup() {
   rollBtn = createButton('Press to Roll')
   rollBtn.position(0,0)
   rollBtn.mousePressed(rollDie);
+  input =createInput()
+  input.position(80, 35)
 }
 
 function draw() {
   background(220);
+  push()
+  textSize(20)
+  text("Wager", 10, 50)
+  pop()
   textSize(100)
   //this draws the rectangle behind the number
   rect(40,80,140,140)
